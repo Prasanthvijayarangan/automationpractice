@@ -49,6 +49,10 @@ public class Testbase {
 		driver.get(url);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		String Title = driver.getTitle();
+		System.out.println("Title : "+Title);
+		String Url = driver.getCurrentUrl();
+		System.out.println("URL : "+Url);
 
 	}
 }
