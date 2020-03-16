@@ -24,15 +24,18 @@ public class Pageaction {
 	}
 
 
-	 public static void scrollDown(WebDriver driver, String element) {
+	 public static void scrollDown(WebDriver driver, String path) {
+		 WebElement element = driver.findElement(By.xpath(path));
 		 JavascriptExecutor js = (JavascriptExecutor) driver;
 	    	js.executeScript("arguments[0].scrollIntoView();", element);
 	}
 
-	public static void mousehover(WebDriver driver, String path, String text) {
+	public static void mousehover(WebDriver driver, String path) {
 		WebElement element = driver.findElement(By.xpath(path));
 		Actions action = new Actions(driver);
 		action.moveToElement(element).perform();
 	}
+	
+	
 
 }

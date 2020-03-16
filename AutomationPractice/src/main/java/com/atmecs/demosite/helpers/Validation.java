@@ -68,17 +68,17 @@ public class Validation {
 		
 	}
 	
-	public static void imagevalidator(WebDriver driver,String path) {
+	public static void imagevalidator(WebDriver driver,String path,String message) {
 		WebElement ImageFile = driver.findElement(By.xpath(path));
 
 	    Boolean ImagePresent = (Boolean) ((JavascriptExecutor)driver).executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0", ImageFile);
 	    if (!ImagePresent)
 	    {
-	         System.out.println("Image not displayed.");
+	         System.out.println(message+" is not displayed.");
 	    }
 	    else
 	    {
-	        System.out.println("Image displayed.");
+	        System.out.println(message+" is displayed.");
 	    }
 	}
 }

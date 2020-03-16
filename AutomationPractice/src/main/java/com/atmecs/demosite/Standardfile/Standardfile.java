@@ -18,5 +18,7 @@ public class Standardfile {
 	public final static String Locator_config = Home_Xpath + "locators.properties";
 	public final static String Validation_Home = Home_file + "resources" + File.separator + "validationdata" + File.separator;
 	public final static String Validation_config =Validation_Home + "validationdata.property";
+	
+	public final static String LOG4J_FILE = "./src/test/resources/log4j.properties";
 
 }

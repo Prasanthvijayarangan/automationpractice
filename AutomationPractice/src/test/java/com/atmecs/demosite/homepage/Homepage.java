@@ -12,7 +12,12 @@ public class Homepage extends Testbase {
 	@Test
 	public void homePage() throws Exception {
 		
-		Demosite.home(driver);
+		Demosite.popularProduct();
+		Demosite.validateImage();
+		Demosite.bestSeller();
+		Demosite.footers();
+		Demosite.writeDataFromExcel();
+		Demosite.readDataFromExcel(0);
 	
 		
 	

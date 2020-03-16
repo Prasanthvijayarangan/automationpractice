@@ -11,12 +11,15 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.BeforeTest;
 
 import com.atmecs.demosite.Standardfile.Standardfile;
+import com.atmecs.demosite.logger.Loggers;
 import com.atmecs.demosite.utils.ReadLocatorsfile;
 
 
 
 
 public class Testbase {
+	
+	Loggers log = new Loggers();
 	public static WebDriver driver;
 	public Properties properties;
 	String browser;
@@ -44,7 +47,7 @@ public class Testbase {
 		Capabilities caps = ((RemoteWebDriver) driver).getCapabilities();
 		browserName = caps.getBrowserName();
 		
-		
+		log.info("browser started");
         
 		driver.get(url);
 		driver.manage().window().maximize();
