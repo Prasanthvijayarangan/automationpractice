@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="38892" started-at="2020-08-11T11:47:44 IST" finished-at="2020-08-11T11:48:22 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="38125" started-at="2020-08-11T11:47:44 IST" finished-at="2020-08-11T11:48:22 IST">
+      <class name="com.atmecs.ninja.testbase.TestBase">
+        <test-method status="PASS" signature="parallelBrowser1()[pri:0, instance:com.atmecs.ninja.testbase.TestBase@7c29daf3]" name="parallelBrowser1" duration-ms="37983" started-at="2020-08-11T11:47:44 IST" finished-at="2020-08-11T11:48:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parallelBrowser1 -->
+      </class> <!-- com.atmecs.ninja.testbase.TestBase -->
+    </test> <!-- Test -->
+    <test name="Test2" duration-ms="38892" started-at="2020-08-11T11:47:44 IST" finished-at="2020-08-11T11:48:22 IST">
+      <class name="com.atmecs.ninja.testbase.TestBase2">
+        <test-method status="PASS" signature="parallelBrowser2()[pri:0, instance:com.atmecs.ninja.testbase.TestBase2@15d0c81b]" name="parallelBrowser2" duration-ms="38753" started-at="2020-08-11T11:47:44 IST" finished-at="2020-08-11T11:48:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parallelBrowser2 -->
+      </class> <!-- com.atmecs.ninja.testbase.TestBase2 -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>
